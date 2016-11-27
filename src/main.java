@@ -11,12 +11,14 @@ public class main {
         tab[2] = new Rectangle(5, 3);
         tab[3] = new carre(2);
 
-        for (int i = 1; i < tab.length; i++) {
+        for (int i = 0; i < 4; i++) {
+            System.out.println(i);
             System.out.println(tab[i]);
         }
 
         try {
-           tab[4]=(carre)tab[3].clone();
+           tab[4]=(carre)((carre)tab[3]).clone();
+            System.out.println(4);
             System.out.println(tab[4]);
 
         } catch (CloneNotSupportedException ex) {

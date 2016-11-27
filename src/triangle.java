@@ -34,7 +34,11 @@ public class triangle implements forme {
     public double perimetre() {
         return A+B+C;
     }
-    public String toSring(){
+
+
+    @Override
+    public String toString() {
+
         return "("+ "A=" + " "+A+" "+ "B="+" "+B+ " "+"c="+" "+C+" "+ "surface=" + " "+surface()+" "+ "perimetre=" + " " + perimetre()+")";
     }
 }

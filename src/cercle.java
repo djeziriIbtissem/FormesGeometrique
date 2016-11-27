@@ -28,7 +28,8 @@ public class cercle implements forme {
         return (2*rayon* Math.PI);
     }
 
-    public String toSring(){
+    @Override
+    public String toString() {
         return "("+ "rayan=" + " "+rayon+" "+ "surface=" + " "+surface()+" "+ "perimetre=" + " " + perimetre()+")";
     }
 }

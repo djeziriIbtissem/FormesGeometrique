@@ -5,9 +5,9 @@ public class Rectangle implements forme,Cloneable {
     private double l;
     private double h;
 
-    public Rectangle(double l, double h){
-        this.l=l;
-        this.h=h;
+    public Rectangle(double l, double h) {
+        this.l = l;
+        this.h = h;
     }
 
     public double getH() {
@@ -20,19 +20,22 @@ public class Rectangle implements forme,Cloneable {
 
     @Override
     public double surface() {
-        return l*h;
+        return l * h;
     }
 
     @Override
     public double perimetre() {
-        return 2*(l+h);
+        return 2 * (l + h);
     }
-    protected  Object clone()
-        throws CloneNotSupportedException{
+
+    protected Object clone()
+            throws CloneNotSupportedException {
         return super.clone();
     }
 
-    public String toSring(){
-        return "("+ "l=" + " "+l+" "+ "h="+" "+h+ " "+ "surface=" + " "+surface()+" "+ "perimetre=" + " " + perimetre()+")";
+    @Override
+    public String toString() {
+        return "(" + "l=" + " " + l + " " + "h=" + " " + h + " " + "surface=" + " " + surface() + " " + "perimetre=" + " " + perimetre() + ")";
+
     }
 }
